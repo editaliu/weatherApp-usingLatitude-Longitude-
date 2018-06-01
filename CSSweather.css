@@ -1,0 +1,89 @@
+/*
+body {
+    background-image: url(https://www.walldevil.com/wallpapers/a79/background-blurry-green-widescreen-wallpaper-wallpapers.jpg);
+}
+*/
+
+.part {
+    /*    background-image: url(http://backgroundcheckall.com/wp-content/uploads/2017/12/photoshop-blurry-background-9.jpg);*/
+    background-color: #3D580D;
+    background: linear-gradient(to bottom right, #3D580D, #54550B);
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    color: #D9F5D4;
+    padding: 5%;
+    margin-top: 7%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 50px black;
+}
+
+
+#where {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D9F5D4;
+    text-transform: uppercase;
+
+}
+
+#location,
+#country {
+    position: relative;
+    display: inline-block;
+}
+
+#desc {
+    color: #D9F5D4;
+}
+
+.firstH {
+    padding-bottom: 7%;
+}
+
+/*
+img {
+    width: 6%;
+}
+*/
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 20px;
+    color: #C0DF19;
+}
+
+i {
+    color: #C0DF19;
+}
+
+#desc {
+    text-transform: capitalize;
+}
+
+.button {
+    width: 100px;
+    padding: 8px;
+    color: black;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #D9F5D4;
+    font-family: 'Eczar', serif, bold;
+
+}
+
+.button:hover {
+    background-color: #759C04;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+.button:focus {
+    outline: none;
+}
