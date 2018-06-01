@@ -32,6 +32,7 @@ $(document).ready(function () {
         $.getJSON('https://ipapi.co/json/', function (datas) {
             lat = datas.latitude;
             lon = datas.longitude;
+
             getweather(unit, lat, lon);
         });
     }
@@ -57,8 +58,10 @@ $(document).ready(function () {
     function getweather(test) {
         apiUrl(test.apihandle);
         $.getJSON(url, function (data) {
-            $('#location').html(data.name);
-            $('#country').html("/ " + data.sys.country)
+            $.getJSON('https://ipapi.co/json/', function (data) {
+                $('#location').html(data.city);
+                $('#country').html("/ " + data.country)
+            });
             var icon = data.weather[0].icon;
             var iconurl = "http://openweathermap.org/img/w/" + icon + ".png";
             $('#img').attr('src', iconurl);
